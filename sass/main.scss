@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=El+Messiri|Indie+Flower');
+$font_h1:'Indie Flower', cursive;
+$font_main:'El Messiri', sans-serif;
+@import 'font-awesome';
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/back.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;  
+    }
+}
+.main-nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+        &__button{
+            display: none;
+                &:checked + .main-nav__item .content{
+                    display: flex;
+                }
+                &:checked + .main-nav__item {
+                    width: 47%;
+                }                   
+            }
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 14%;
+            box-shadow:1px 3px 15px #E2FB3C;
+            .content{
+                display: none;
+                height: 100%;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            &-label{
+                display: flex;
+                justify-content: center;
+                    h1{
+                        font-family: $font_h1;
+                        text-shadow: 2px 2px 4px #E2FB3C;
+                        color:#0A0200;
+                        font-size: 40px;
+                        cursor: pointer; 
+                        transition: all 0.7s;
+                        padding-top:45px; 
+                    }
+                    h1:hover{
+                    text-shadow: 2px 2px 6px #0A0200;
+                    color:#E2FB3C;
+                }                
+            }            
+        }        
+}
+/*About*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(254, 255, 250, 0.3);
+    border-radius: 7px;
+    padding: 34px;
+    width: 85%;
+    .title{
+        font-family: $font_main;
+        font-size: 25px;
+    }
+    .reviews{
+       width: 90%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       box-shadow:2px 2px 4px #E2FB3C;
+       background-color: rgba(174, 198, 207, 0.7);
+       border-radius: 5px;
+       padding-top: 20px;
+       padding-bottom: 10px;
+       margin-top: 14px;
+       .review{
+           font-family: $font_main;
+           font-size: 16px;           
+       }
+       .autor{
+               padding-left: 140px;
+               font-weight: bold;               
+           }
+    }
+}
+/*cars */
+.cars{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(254, 255, 250, 0.3);
+    border-radius: 7px;
+    .car1{
+        width: 70%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../img/car1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        box-shadow: 2px 2px 6px #0A0200;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: all 0.7s;
+        .more{
+            text-decoration: none;
+            font-family: $font_main;
+            font-size: 20px;
+            padding: 5px;
+            background-color:#E2FB3C;
+            color:#0A0200;
+            box-shadow: 2px 2px 6px #0A0200;
+            border-radius: 7px;
+            transition: all 0.7s;
+            display: none;
+        }
+        .more:hover{
+            background-color:#0A0200;
+            color:#E2FB3C;
+        }
+    }
+    .car1:hover{
+        .more{
+            display: block;
+        }
+    }   
+    .car2{
+        width: 60%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../img/car2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        box-shadow: 2px 2px 6px #0A0200;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: all 0.7s;
+        .more{
+            text-decoration: none;
+            font-family: $font_main;
+            font-size: 20px;
+            padding: 5px;
+            background-color:#E2FB3C;
+            color:#0A0200;
+            box-shadow: 2px 2px 6px #0A0200;
+            border-radius: 7px;
+            transition: all 0.7s;
+            display: none;
+        }
+        .more:hover{
+            background-color:#0A0200;
+            color:#E2FB3C;
+        }
+    }
+    .car2:hover{
+        .more{
+            display: block;
+        }
+    }   
+}
+/*Your taxi */
+.taxi{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(254, 255, 250, 0.3);
+    border-radius: 7px;   
+    .info{
+        display: flex;
+        text-align: center;
+        background-color: rgba(174, 198, 207, 0.7);
+        border-radius: 7px;
+        box-shadow: 2px 2px 6px #0A0200;
+        .advantages{
+            display: flex;
+            padding: 18px;
+            align-items: center;
+            i.fa-clock-o,.fa-thumbs-o-up{
+                font-size: 105px;
+            }
+            p{
+                font-family: $font_main;
+                font-size: 30px;
+                line-height: 100%;
+                padding-left: 20px;
+            }
+        }
+    }
+    a{
+        margin-left: 18%;
+            .number{
+                border-radius: 7px;
+                width: 80%;
+                box-shadow: 2px 2px 6px #0A0200;
+            }
+    }
+}
+/*services*/
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(254, 255, 250, 0.3);
+    border-radius: 7px;
+    padding: 30px;
+    img{
+        width: 70%;
+        border-radius: 4px;
+    }
+    .servic{
+        width: 90%;
+        padding-top: 20px;
+        p{
+            font-family: $font_main;
+            font-size: 20px;
+        }
+        .more{
+            text-decoration: none;
+            font-family: $font_main;
+            font-size: 20px;
+            padding: 5px;
+            background-color:#E2FB3C;
+            color:#0A0200;
+            border-radius: 7px;
+            margin-left: 65%;
+            transition: all 0.7s;
+        }
+        .more:hover{
+            background-color:#0A0200;
+            color:#E2FB3C;
+        }
+    }
+}
+/*contacts*/
+.contacts__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(254, 255, 250, 0.3);
+    border-radius: 7px;
+    padding: 47px;
+    p{
+        font-family: $font_main;
+        font-size: 25px;
+    }
+    .contacts__link{
+        font-family: $font_main;
+        text-decoration: none;
+        color:#0A0200;
+        padding-top: 20px;
+        font-size: 25px;
+        transition: all 0.7s;        
+        .fa{
+            font-size: 40px;
+            color:#0A0200;
+            transition: all 0.7s;
+        }
+    }
+    .contacts__link:hover{
+        color:#E2FB3C;
+        text-shadow: 2px 2px 6px #0A0200;
+        .fa{
+            color:#E2FB3C;
+            text-shadow: 2px 2px 6px #0A0200;
+        }
+    }
+}
