@@ -3117,7 +3117,7 @@ html body {
   font-family: "Indie Flower", cursive;
   text-shadow: 2px 2px 4px #E2FB3C;
   color: #0A0200;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
@@ -3371,6 +3371,13 @@ html body {
   border-radius: 4px;
 }
 .services .servic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 90%;
   padding-top: 20px;
 }
@@ -3380,6 +3387,7 @@ html body {
 }
 .services .servic .more {
   text-decoration: none;
+  text-align: center;
   font-family: "El Messiri", sans-serif;
   font-size: 20px;
   padding: 5px;
@@ -3387,6 +3395,7 @@ html body {
   color: #0A0200;
   border-radius: 7px;
   margin-left: 65%;
+  margin-top: 10px;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
@@ -3440,4 +3449,106 @@ html body {
 .contacts__links .contacts__link:hover .fa {
   color: #E2FB3C;
   text-shadow: 2px 2px 6px #0A0200;
+}
+
+@media (min-width: 1080px) and (max-width: 1300px) {
+  .main-nav__item-label h1 {
+    font-size: 27px;
+  }
+
+  .taxi .info .advantages i.fa-clock-o, .taxi .info .advantages .fa-thumbs-o-up {
+    font-size: 60px;
+  }
+  .taxi .info .advantages p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .main-nav__item-label h1 {
+    font-size: 25px;
+  }
+
+  .taxi .info .advantages i.fa-clock-o, .taxi .info .advantages .fa-thumbs-o-up {
+    font-size: 50px;
+  }
+  .taxi .info .advantages p {
+    font-size: 20px;
+  }
+
+  .about .reviews .review {
+    font-size: 13px;
+  }
+
+  .services .servic p {
+    font-size: 14px;
+  }
+  .services .servic .more {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .main-nav__item-label h1 {
+    font-size: 20px;
+  }
+
+  .taxi .info .advantages i.fa-clock-o, .taxi .info .advantages .fa-thumbs-o-up {
+    font-size: 35px;
+  }
+  .taxi .info .advantages p {
+    font-size: 16px;
+  }
+
+  .about .reviews .review {
+    font-size: 10px;
+  }
+
+  .services .servic p {
+    font-size: 12px;
+  }
+  .services .servic .more {
+    font-size: 12px;
+  }
+
+  .contacts__links p {
+    font-size: 17px;
+  }
+  .contacts__links .contacts__link {
+    font-size: 20px;
+  }
+  .contacts__links .contacts__link .fa {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main-nav__item-label h1 {
+    font-size: 18px;
+  }
+
+  .taxi .info .advantages i.fa-clock-o, .taxi .info .advantages .fa-thumbs-o-up {
+    font-size: 30px;
+  }
+  .taxi .info .advantages p {
+    font-size: 13px;
+  }
+
+  .about .reviews .review {
+    font-size: 10px;
+  }
+
+  .services .servic p {
+    font-size: 12px;
+  }
+  .services .servic .more {
+    font-size: 12px;
+  }
+
+  .contacts__links p {
+    font-size: 17px;
+  }
+  .contacts__links .contacts__link {
+    font-size: 20px;
+  }
+  .contacts__links .contacts__link .fa {
+    font-size: 30px;
+  }
 }

@@ -46,8 +46,7 @@ html{
                 width: 90%;
                 justify-content: center;
                 align-items: center;
-            }
-            
+            }            
             &-label{
                 display: flex;
                 justify-content: center;
@@ -55,7 +54,7 @@ html{
                         font-family: $font_h1;
                         text-shadow: 2px 2px 4px #E2FB3C;
                         color:#0A0200;
-                        font-size: 40px;
+                        font-size: 30px;
                         cursor: pointer; 
                         transition: all 0.7s;
                         padding-top:45px; 
@@ -238,6 +237,8 @@ html{
         border-radius: 4px;
     }
     .servic{
+        display: flex;
+        flex-direction: column;
         width: 90%;
         padding-top: 20px;
         p{
@@ -246,6 +247,7 @@ html{
         }
         .more{
             text-decoration: none;
+            text-align: center;
             font-family: $font_main;
             font-size: 20px;
             padding: 5px;
@@ -253,6 +255,7 @@ html{
             color:#0A0200;
             border-radius: 7px;
             margin-left: 65%;
+            margin-top: 10px;
             transition: all 0.7s;
         }
         .more:hover{
@@ -296,3 +299,4 @@ html{
         }
     }
 }
+@import 'media';
